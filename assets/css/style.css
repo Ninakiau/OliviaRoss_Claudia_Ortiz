@@ -1,13 +1,9 @@
 body{
-    font-family: "Raleway", sans-serif;
-    margin: 0;
-    padding: 0;
-    border: 0;
-
+    font-family: "Raleway", sans-serif; /* Google Font Raleway se utiliza para el body de esta página */
 }
 
 .custom-navbar{
-    background-color: #333;
+    background-color: #333; /* Color de fondo de la barra de navegación */
     color: #FFFFFF;
 }
 
@@ -15,72 +11,63 @@ body{
     color: #FFFFFF;
 }
 
-.container-fluid{
-    align-items: end;
-}
-
 #hero-section .container-fluid{
-    background-image: url(../img/bg-hero.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:25%;
-    height: 95vh;
-    padding: auto;
+    background-image: url(../img/bg-hero.jpg); /* Imagen de fondo del hero section */
+    background-size:cover; /* Tamaño de la imagen de fondo, cubre todo el espacio del contenedor*/
+    background-position:25%; /* Posición de la imagen de fondo respecto respecto al contenedor, esta al 25% del borde del contenedor en el eje x */
+    height: 95vh; /* Altura del hero section, la imagen ocupa el 95% del tamaño de la ventana del viewport. */
 }
 #hero-section h1, p{
-    color: #FFFFFF;
-
+    color: #FFFFFF; /* Color del texto del hero section */
 }
 
 
 #about-me p{
-    color: #000000;
+    color: #000000; /* Color del texto del párrafo de la sección about me*/
 }
 #hero-section .btn{
-    color:#FFFFFF;
+    color:#FFFFFF; /* Color del texto del botón */
 }
 #hero-section .btn-primary {
-    background-color: #56C0E0;
-    border-color: #56C0E0;
+    background-color: #56C0E0; /* Color de fondo del botón */
+    border-color: #56C0E0; /* Color del borde del botón */
 }
 .icon{
-    font-size: 60px;
+    font-size: 60px; /* Tamaño de los iconos de la sección about me */
 }
+
 main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #17A2B8; /* Color de fondo del main */
 }
 
-
-
-#mis-trabajos{
-    background-color: #17A2B8;
-    padding: auto;
-    margin: 0;
-    align-items: center;
+#my-work h1{
+    color: #FFFFFF; /* Color del título de la sección my work */
 }
 
+.card img{
+    height: 30vh; /* Altura de las imágenes de las tarjetas, ocupan el 30% del viewport */
+    width: 100%; /* Ancho de las imágenes de las tarjetas, ocupan el 100% del contenedor */
+    object-fit: cover; /* Ajuste de la imagen al contenedor, cubre el contenedor*/
+
+}
 .card-text{
-    color: #373A3C;
+    color: #373A3C; /* Color del texto de las tarjetas */
 }
 
 .card-body .btn{
-    border-color: #56C0E0;
-    color: #56C0E0;
-    padding: auto;
+    border-color: #56C0E0; /* Color del borde del botón */
+    color: #56C0E0;     /* Color del texto del botón */
 }
 #contact .btn{
-    background-color: #56C0E0;
-    border-color: #56C0E0;
+    background-color: #56C0E0; /* Color de fondo del botón */
+    border-color: #56C0E0; /* Color del borde del botón */
 }
 footer{
-    background-color: #0F0F0F;
+    background-color: #0F0F0F; /* Color de fondo del footer */
 }
 
 footer p{
-    color: #FFFFFF;
+    color: #FFFFFF; /* Color del texto del footer */
 }
 
 

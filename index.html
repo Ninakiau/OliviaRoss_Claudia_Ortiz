@@ -15,21 +15,31 @@
       src="https://kit.fontawesome.com/fffc98518a.js"
       crossorigin="anonymous"
     ></script>
-    <!-- importando Bootstrap -->
+    <!-- importación de Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- importando Links locales -->
+    <!-- importación Links locales -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Olivia Ross</title>
   </head>
+  <!-- contenido de Olivia Ross -->
   <body class="container-fluid m-0 p-0 border-0">
     <header id="bar">
       <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
         <div class="container">
+          <!-- 
+            container-fluid: El contenedor ocupa todo el ancho de la pantalla, osea el 100% del ancho del viewport sin relleno (padding) en los lados. 
+            m-0: margen exterior en 0.
+            p-0: relleno dentro del elemento 0.
+            border-0: borde del elemento 0.
+            navbar: Proporciona estilos predefinidos para una barra de navegación responsiva y adaptable.
+            navbar-expand-lg: Esta clase especifica que la barra de navegación se expandirá cuando el ancho de la pantalla sea >= a lg de Bootstrap, osea una pantalla grande.
+            navbar-light: proporciona un esquema de color claro para la barra de navegación, haciéndola más legible sobre un fondo oscuro.
+            custom-navbar: Esta clase es una clase personalizada en el css se le da color al fondo y a las letras(ver css) -->
           <a class="navbar-brand" href="#">
             <img src="assets/img/logo.png" alt="Logo Olivia Ross" />
           </a>
@@ -42,20 +52,31 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+            <!-- data-bs-toggle: Atributo que se utiliza para activar el colapso de la barra de navegación. -->
+            <!-- data-bs-target="#navbarSupportedContent": identifica el elemento que se colapsará. -->
+            <!-- aria-controls: Atributo que se utiliza para identificar el elemento que se colapsará con el boton de alternancia -->
+            <!-- aria-expanded: Atributo que se utiliza para indicar si el elemento está expandido o no. -->
+            <!-- aria-label: Atributo que se utiliza para proporcionar una etiqueta accesible para el botón de alternancia. -->
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!-- 
+                navbar-nav: alinea los elementos de la barra de navegación.
+                ms-auto: margen izquierdo automático, es decir, los elementos se alinean a la derecha.
+                mb-2: margen inferior de 0.5rem.
+                mb-lg-0: margen inferior de 0 en pantallas grandes.
+              -->
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#aboutme"
-                  >Acerca de mi</a
-                >
+                <!--nav-item: clase que se utiliza para los elementos de la barra de navegación -->
+                <a class="nav-link" href="#about-me">Acerca de mi</a>
+                <!-- nav-link: para los enlaces de la barra de navegación-->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Trabajos</a>
+                <a class="nav-link" href="#my-work">Trabajos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contact">Contacto</a>
               </li>
             </ul>
           </div>
@@ -66,6 +87,8 @@
     <section id="hero-section" class="py-5">
       <div class="container-fluid py-5">
         <div class="row justify-content-start py-5">
+          <!--justify-content-start: Alinea los elementos al inicio del contenedor.
+          row: Clase que se utiliza para las filas de la grilla. -->
           <div class="col-md-4 col-12">
             <span></span>
           </div>
@@ -80,27 +103,10 @@
                 tincidunt. Donec imperdiet augue nec aliquet sagittis.
               </p>
               <div class="d-flex justify-content-end">
-                <div class="pr-5">
-                  <button type="button" class="btn btn-outline-info px-4">
-                    Trabajos
-                  </button>
-                </div>
-                <div>
-                  <span class="px-2"></span>
-                </div>
-                <div>
-                  <button
-                    type="button"
-                    class="btn btn-primary mr-2"
-                    style="
-                      --bs-btn-padding-y: 0.35rem;
-                      --bs-btn-padding-x: 1.5rem;
-                      --bs-btn-font-size: 0.95rem;
-                    "
-                  >
-                    Contacto
-                  </button>
-                </div>
+                <button type="button" class="btn btn-outline-info me-3">
+                  Trabajos
+                </button>
+                <button type="button" class="btn btn-primary">Contacto</button>
               </div>
             </div>
           </div>
@@ -108,126 +114,136 @@
       </div>
     </section>
     <!-- about-me -->
-    <section class="container-fluid justify-content-center py-5">
-      <article
-        id="about-me"
-        class="d-flex flex-column align-items-center justify-content-center"
-      >
+    <section id="about-me" class="py-4 px-4">
+      <article>
         <h1 class="text-center fw-bold">Acerca de mi</h1>
         <p class="text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a
           mauris id purus blandit dapibus. Nunc at enim et lacus porttitor
           tincidunt. Donec imperdiet augue nec aliquet sagittis.
         </p>
-        <div class="container">
-          <div class="row">
-            <!-- about-me 1 -->
-            <div class="container col-sm-3 col-12 text-center">
-              <div class="icon justify-content-center">
-                <i class="fa-solid fa-camera"></i>
-              </div>
-              <h5 class="text-center fw-bold">Fotógrafa de comida</h5>
-              <p class="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a
-                mauris id purus blandit dapibus.
-              </p>
+        <!-- container: Clase que se utiliza para contener los elementos de la grilla. -->
+        *<!-- row: Clase que se utiliza para las filas de la grilla. -->
+        <div class="row">
+          <!-- about-me 1 -->
+          <div class="container col-sm-3 col-12 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-camera"></i>
             </div>
-            <!-- about-me 2 -->
-            <div class="container col-sm-3 col-12 text-center">
-              <div class="icon justify-content-center">
-                <i class="fa-solid fa-bullhorn"></i>
-              </div>
-              <h5 class="text-center fw-bold">Critica culinaria</h5>
-              <p class="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a
-                mauris id purus blandit dapibus.
-              </p>
+            <h5 class="fw-bold">Fotógrafa de comida</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a
+              mauris id purus blandit dapibus.
+            </p>
+          </div>
+          <!-- about-me 2 -->
+          <div class="container col-sm-3 col-12 text-center">
+            <div class="icon">
+              <i class="fa-solid fa-bullhorn"></i>
             </div>
-            <!-- about-me 3 -->
-            <div class="container col-sm-3 col-12 text-center">
-              <div class="icon justify-content-center">
-                <i class="fa-regular fa-map"></i>
-              </div>
-              <h5 class="text-center fw-bold">Bloggera de viajes</h5>
-              <p class="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a
-                mauris id purus blandit dapibus.
-              </p>
+            <h5 class="fw-bold">Critica culinaria</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a
+              mauris id purus blandit dapibus.
+            </p>
+          </div>
+          <!-- about-me 3 -->
+          <div class="container col-sm-3 col-12 text-center">
+            <div class="icon">
+              <i class="fa-regular fa-map"></i>
             </div>
+            <h5 class="fw-bold">Bloggera de viajes</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a
+              mauris id purus blandit dapibus.
+            </p>
           </div>
         </div>
       </article>
     </section>
-
-    <!-- <main id="mis-trabajos" class="d-flex d-flex-wrap align-items-center" >
-          <div class="row">
-            <h1 class="text-center fw-bold my-5">Mis trabajos</h1>
-            <div class="col-md-4 col-12 px-5 mb-4 align-items-center">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="assets/img/card-1.jpg"
-                  class="card-img-top"
-                  alt="imagen de colaciones"
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-center fw-bold">Asado en la Patagonia</h5>
-                  <p class="card-text text-start">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <button type="button" class="btn btn-outline-info">Ver más</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-12 px-5 mb-4">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="assets/img/card-1.jpg"
-                  class="card-img-top"
-                  alt="imagen de colaciones"
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-center fw-bold">Asado en la Patagonia</h5>
-                  <p class="card-text text-start">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <button type="button" class="btn btn-outline-info">Ver más</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-12 px-5 mb-4">
-              <div class="card" style="width: 18rem">
-                <img
-                  src="assets/img/card-1.jpg"
-                  class="card-img-top"
-                  alt="imagen de colaciones"
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-center fw-bold">Asado en la Patagonia</h5>
-                  <p class="card-text text-start">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <button type="button" class="btn btn-outline-info">Ver más</button>
-                </div>
+    <!-- mis trabajos -->
+    <main id="my-work" class="container-fluid justify-content-center py-4">
+      <div class="container">
+        <h1 class="text-center fw-bold my-5">Mis trabajos</h1>
+        <div class="row">
+          <!-- Tarjeta: Asado en la Patagonia -->
+          <div class="col-md-4 col-sm-6 col-12 pb-5 px-4">
+            <div class="card">
+              <img
+                src="assets/img/card-1.jpg"
+                class="card-img-top"
+                alt="imagen asado a la patagonia"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold">
+                  Asado en la Patagonia
+                </h5>
+                <p class="card-text text-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  a mauris id purus blandit dapibus.
+                </p>
+                <button type="button" class="btn btn-outline-info">
+                  Ver más
+                </button>
               </div>
             </div>
           </div>
-    </main> -->
-    <section id="contact" class="container-fluid py-5 my-3">
-      <article
-        id="about-me"
-        class="container d-flex flex-column align-items-center justify-content-center"
-      >
+          <!-- Tarjeta: Papas del fin del mundo -->
+          <div class="col-md-4 col-sm-6 col-12 pb-5 px-4">
+            <div class="card">
+              <img
+                src="assets/img/card-2.jpg"
+                class="card-img-top"
+                alt="imagen papas del fin del mundo"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold">
+                  Papas del fin del mundo
+                </h5>
+                <p class="card-text text-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  a mauris id purus blandit dapibus.
+                </p>
+                <button type="button" class="btn btn-outline-info">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta: Salmones de Alaska -->
+          <div class="col-md-4 col-sm-6 col-12 pb-5 px-4">
+            <div class="card">
+              <img
+                src="assets/img/card-3.jpg"
+                class="card-img-top"
+                alt="salmones de alaska"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold">
+                  Salmones de Alaska
+                </h5>
+                <p class="card-text text-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  a mauris id purus blandit dapibus.
+                </p>
+                <button type="button" class="btn btn-outline-info">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- contact -->
+    <section id="contact" class="py-5 my-3">
+      <article id="about-me">
         <h1 class="text-center fw-bold">Contáctame</h1>
-        <div class="container d-flex flex-column align-items-center">
+        <div class="container">
           <div class="row">
             <div class="col-12">
-              <span class="text-start fw-bold py-1 mx-1">Nombre</span>
+              <span class="fw-bold py-1 mx-1">Nombre</span>
               <div class="input-group mb-3">
                 <input
                   type="text"
@@ -239,9 +255,7 @@
               </div>
             </div>
             <div class="col-12">
-              <span class="text-start fw-bold py-1 mx-1"
-                >Correo electrónico</span
-              >
+              <span class="fw-bold py-1 mx-1">Correo electrónico</span>
               <div class="input-group mb-3">
                 <input
                   type="text"
@@ -253,7 +267,7 @@
               </div>
             </div>
             <div class="col-12">
-              <span class="text-start fw-bold py-1 mx-1">Mensaje</span>
+              <span class="fw-bold py-1 mx-1">Mensaje</span>
               <div class="input-group mb-3">
                 <textarea
                   class="form-control"
@@ -262,7 +276,7 @@
                 ></textarea>
               </div>
             </div>
-            <div class="container d-flex justify-content-end">
+            <div class="d-flex justify-content-end">
               <button
                 type="button"
                 class="btn btn-primary"
@@ -280,9 +294,9 @@
       </article>
     </section>
     <!-- footer -->
-    <footer class="container-fluid">
-      <section class="py-4 px-4 d-flex justify-content-center">
-        <p class="text-center">
+    <footer>
+      <section class="px-4 py-3">
+        <p class="text-center p-0 m-0">
           Olivia Ros 2019. Todos los derechos reservados.
         </p>
       </section>
