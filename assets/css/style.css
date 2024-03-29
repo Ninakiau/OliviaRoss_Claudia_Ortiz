@@ -1,0 +1,86 @@
+body{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+.custom-navbar{
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+.nav-item a{
+    color: #FFFFFF;
+}
+
+.container-fluid{
+    align-items: end;
+}
+
+#hero-section .container-fluid{
+    background-image: url(../img/bg-hero.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:25%;
+    height: 95vh;
+    padding: auto;
+}
+#hero-section h1, p{
+    color: #FFFFFF;
+
+}
+
+
+#about-me p{
+    color: #000000;
+}
+#hero-section .btn{
+    color:#FFFFFF;
+}
+#hero-section .btn-primary {
+    background-color: #56C0E0;
+    border-color: #56C0E0;
+}
+.icon{
+    font-size: 60px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#mis-trabajos{
+    background-color: #17A2B8;
+    padding: auto;
+    margin: 0;
+    align-items: center;
+}
+
+.card-text{
+    color: #373A3C;
+}
+
+.card-body .btn{
+    border-color: #56C0E0;
+    color: #56C0E0;
+    padding: auto;
+}
+#contact .btn{
+    background-color: #56C0E0;
+    border-color: #56C0E0;
+}
+footer{
+    background-color: #0F0F0F;
+}
+
+footer p{
+    color: #FFFFFF;
+}
+
+
